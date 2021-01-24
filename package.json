@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/app.scss css/app.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "compile:sass": "node-sass --include-path scss scss/app.scss css/app.css -w"
+    "sass": "node-sass --include-path scss scss/app.scss css/app.css -w"
   },
   "license": "MIT",
   "dependencies": {

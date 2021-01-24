@@ -8,16 +8,31 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 850px;
+  display: block;
+  position: relative; /*中央揃えしたい要素の親要素に指定*/
+  
   &__title {
     font-size: 60px;
     color: #fff;
     text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
+
+    position: absolute;  /*要素を浮かす*/
+    top: 40%; /*親要素を起点に上から50%*/
+    left: 50%;  /*親要素を起点に左から50%*/
+    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
     @include mq() {
       text-align: center;
     }
+  }
+
+  &__paragraph {
+    font-size: $font-size_l;
+    position: absolute;  /*要素を浮かす*/
+    top: 80%; /*親要素を起点に上から50%*/
+    left: 50%;  /*親要素を起点に左から50%*/
+    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
   }
 }
