@@ -4,4 +4,14 @@
 .p-company-overview {
   width: 70%;
   margin: 0 auto;
+  padding-top: 40px;
+
+  &__term {
+    font-weight: bold;
+    font-size: $font-size_l;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+  }
 }
