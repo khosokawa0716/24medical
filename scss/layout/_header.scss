@@ -12,10 +12,10 @@
   padding-left: $space_xl;
   padding-right: $space_xl;
   position: fixed;
-  transition: .3s;
+  transition: 0.3s;
   z-index: 2;
   &.float-active {
-    transition: .3s;
+    transition: 0.3s;
     background: rgba(255, 255, 255, 0.9);
   }
   @include mq() {
@@ -27,5 +27,4 @@
     font-size: $font-size_xxl;
     font-weight: bold;
   }
-
 }

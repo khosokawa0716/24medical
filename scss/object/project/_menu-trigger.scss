@@ -3,7 +3,7 @@
   @include mq() {
     display: inline-block;
   }
-  transition: all .4s;
+  transition: all 0.4s;
   box-sizing: border-box;
   position: relative;
   width: 40px;
@@ -11,7 +11,7 @@
   z-index: 3;
   &__barger {
     display: inline-block;
-    transition: all .4s;
+    transition: all 0.4s;
     box-sizing: border-box;
     position: absolute;
     left: 0;

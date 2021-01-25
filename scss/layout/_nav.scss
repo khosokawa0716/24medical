@@ -4,20 +4,20 @@
 // 親子構造も一応変更してみた
 
 .l-nav {
-	@include mq() {
+  @include mq() {
     display: block;
     position: absolute;
     top: 0;
     right: -100%;
-    background: rgba(255, 255, 255, .85);
+    background: rgba(255, 255, 255, 0.85);
     width: 100%;
     height: 100vh;
     padding-top: 50px;
-    transition: .5s;
+    transition: 0.5s;
     &.active {
-      transition: .5s;
+      transition: 0.5s;
       transform: translateX(-100%);
       z-index: 2;
     }
-	}
   }
+}
