@@ -11,34 +11,7 @@
     <link rel="stylesheet" href="./css/app.css" type="text/css" />
   </head>
   <body>
-    <header id="header" class="l-header js-float-menu">
-      <h1 class="l-header__title">24MEDICAL</h1>
-
-      <div class="p-menuTrigger js-toggle-sp-menu">
-        <span class="p-menuTrigger__barger"></span>
-        <span class="p-menuTrigger__barger"></span>
-        <span class="p-menuTrigger__barger"></span>
-      </div>
-      <nav id="nav" class="l-nav js-toggle-sp-menu-target">
-        <ul class="c-menu">
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#about" class="c-menu__link">事業内容</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#staff" class="c-menu__link">会社概要</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#news" class="c-menu__link">お知らせ</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#contact" class="c-menu__link">お問い合わせ</a>
-					</li>
-					<li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#recruit" class="c-menu__link">採用情報</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header"></div>
     <main id="main">
       <section id="hero" class="p-hero u-width js-float-menu-target">
         <h2 class="p-hero__title">
@@ -122,9 +95,13 @@
         <div class="l-container__body p-company-overview">
           <dl>
             <dt class="p-company-overview__term">会社名</dt>
-            <dd class="p-company-overview__description">株式会社24MEDICAL （24MEDICAL．INC）</dd>
+            <dd class="p-company-overview__description">
+              株式会社24MEDICAL （24MEDICAL．INC）
+            </dd>
             <dt class="p-company-overview__term">所在地</dt>
-            <dd class="p-company-overview__description">大阪市住之江区北加賀屋５丁目６-２４ フリード北加賀屋１F</dd>
+            <dd class="p-company-overview__description">
+              大阪市住之江区北加賀屋５丁目６-２４ フリード北加賀屋１F
+            </dd>
             <dt class="p-company-overview__term">電話番号</dt>
             <dd class="p-company-overview__description">06-XXXX-XXXX</dd>
             <dt class="p-company-overview__term">メールアドレス</dt>
@@ -132,9 +109,11 @@
             <dt class="p-company-overview__term">代表取締役</dt>
             <dd class="p-company-overview__description">八木 竜馬</dd>
             <dt class="p-company-overview__term">設立年月日</dt>
-            <dd class="p-company-overview__description">2020年12月21日</dd>
+            <dd class="p-company-overview__description">2020年12月7日</dd>
             <dt class="p-company-overview__term">事業内容</dt>
-            <dd class="p-company-overview__description">地域の薬局の支援、対物業務代行</dd>
+            <dd class="p-company-overview__description">
+              24サポート、24薬局、24フルケア
+            </dd>
           </dl>
         </div>
       </section>
@@ -198,24 +177,25 @@
           </form>
         </div>
         <a href="./privacy.html">プライバシーポリシー</a>
-			</section>
-			<section class="l-container u-bgColor__project u-box-shadow" id="recruit">
+      </section>
+      <section class="l-container u-bgColor__project u-box-shadow" id="recruit">
         <h2 class="l-container__title"><span>採用情報</span></h2>
         <div class="l-container__body">
           <p class="p-news">現在採用は行っておりません。</p>
         </div>
       </section>
     </main>
-
-    <footer id="footer" class="l-footer">
-      <p>Copyright &copy; 24MEDICAL All Rights Reserved</p>
-    </footer>
-
+    <footer id="footer"></footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </body>
 </html>

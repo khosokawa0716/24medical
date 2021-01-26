@@ -1,0 +1,52 @@
+<script>
+  $(function () {
+    // フロートベッダーメニュー
+    var targetHeight = $(".js-float-menu-target").height();
+    $(window).on("scroll", function () {
+      $(".js-float-menu").toggleClass(
+        "float-active",
+        $(this).scrollTop() > targetHeight
+      );
+    });
+
+    // SPメニュー
+    $(".js-toggle-sp-menu").on("click", function () {
+      $(this).toggleClass("active");
+      $(".js-toggle-sp-menu-target").toggleClass("active");
+    });
+
+    // SPメニュー　項目をクリックしたら自動的に閉じる
+    $(".js-toggle-sp-menu-item").on("click", function () {
+      $(".js-toggle-sp-menu").toggleClass("active");
+      $(".js-toggle-sp-menu-target").toggleClass("active");
+    });
+  });
+</script>
+<header id="header" class="l-header js-float-menu">
+  <h1 class="l-header__title">24MEDICAL</h1>
+
+  <div class="p-menuTrigger js-toggle-sp-menu">
+    <span class="p-menuTrigger__barger"></span>
+    <span class="p-menuTrigger__barger"></span>
+    <span class="p-menuTrigger__barger"></span>
+  </div>
+  <nav id="nav" class="l-nav js-toggle-sp-menu-target">
+    <ul class="c-menu">
+      <li class="c-menu__item js-toggle-sp-menu-item">
+        <a href="#about" class="c-menu__link">事業内容</a>
+      </li>
+      <li class="c-menu__item js-toggle-sp-menu-item">
+        <a href="#staff" class="c-menu__link">会社概要</a>
+      </li>
+      <li class="c-menu__item js-toggle-sp-menu-item">
+        <a href="#news" class="c-menu__link">お知らせ</a>
+      </li>
+      <li class="c-menu__item js-toggle-sp-menu-item">
+        <a href="#contact" class="c-menu__link">お問い合わせ</a>
+      </li>
+      <li class="c-menu__item js-toggle-sp-menu-item">
+        <a href="#recruit" class="c-menu__link">採用情報</a>
+      </li>
+    </ul>
+  </nav>
+</header>

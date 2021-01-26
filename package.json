@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --include-path scss scss/app.scss css/app.css -w"
+    "sass": "node-sass --include-path scss scss/app.scss css/app.css -w",
+    "prettier": "npx prettier --write ."
   },
   "license": "MIT",
   "dependencies": {

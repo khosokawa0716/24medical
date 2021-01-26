@@ -11,31 +11,7 @@
     <link rel="stylesheet" href="./css/app.css" type="text/css" />
   </head>
   <body>
-    <header id="header" class="l-header js-float-menu">
-      <a href="./index.html"><h1 class="l-header__title">24MEDICAL</h1></a>
-
-      <div class="p-menuTrigger js-toggle-sp-menu">
-        <span class="p-menuTrigger__barger"></span>
-        <span class="p-menuTrigger__barger"></span>
-        <span class="p-menuTrigger__barger"></span>
-      </div>
-      <nav id="nav" class="l-nav js-toggle-sp-menu-target">
-        <ul class="c-menu">
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#about" class="c-menu__link">事業内容</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#staff" class="c-menu__link">会社概要</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#news" class="c-menu__link">お知らせ</a>
-          </li>
-          <li class="c-menu__item js-toggle-sp-menu-item">
-            <a href="#contact" class="c-menu__link">お問い合わせ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <header id="header"></header>
     <main id="main">
       <section class="l-container" id="contact">
         <h2>プライバシーポリシー</h2>
@@ -113,15 +89,18 @@
       </section>
     </main>
 
-    <footer id="footer" class="l-footer">
-      <p>Copyright &copy; 24MEDICAL All Rights Reserved</p>
-    </footer>
+    <footer id="footer"></footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </body>
 </html>
