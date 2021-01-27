@@ -1,7 +1,12 @@
 <script>
   $(function () {
     // フロートベッダーメニュー
-    var targetHeight = $(".js-float-menu-target").height();
+    if ($(".js-float-menu-target").height() !== undefined) {
+      var targetHeight = $(".js-float-menu-target").height();
+    } else {
+      var targetHeight = 10;
+    }
+    
     $(window).on("scroll", function () {
       $(".js-float-menu").toggleClass(
         "float-active",
@@ -23,7 +28,7 @@
   });
 </script>
 <header id="header" class="l-header js-float-menu">
-  <h1 class="l-header__title">24MEDICAL</h1>
+  <a href="index.html"><h1 class="l-header__title">24MEDICAL</h1></a>
 
   <div class="p-menuTrigger js-toggle-sp-menu">
     <span class="p-menuTrigger__barger"></span>

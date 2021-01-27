@@ -15,3 +15,10 @@
 - プライバシーポリシーの文章
 - スクロールをjsで実装する
 - メタタグとかSEO施策
+- headerが入子になっている
+- scriptが開発ツールから見えている
+
+
+# メモ
+- jQueryによるloadメソッドを有効にするため、ローカルファイルはこれで起動する
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files
