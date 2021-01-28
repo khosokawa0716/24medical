@@ -2,12 +2,13 @@
 // hero
 // ==================================
 .p-hero {
-  //background-image: url('../images/hero.jpg');
-  background-image: url("https://cdn.pixabay.com/photo/2019/08/06/02/16/landscape-4387209_1280.jpg");
+  background-image: url("../img/top.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
   height: 850px;
   display: block;
   position: relative; /*中央揃えしたい要素の親要素に指定*/
@@ -15,7 +16,7 @@
   &__title {
     font-size: 60px;
     color: #fff;
-    text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 10px $background-color_accent, 0 0 50px rgba(0, 0, 0, 0.8);
 
     position: absolute; /*要素を浮かす*/
     top: 40%; /*親要素を起点に上から50%*/

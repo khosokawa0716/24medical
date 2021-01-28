@@ -2,12 +2,12 @@
 // footer
 // ==================================
 .l-footer {
-  background: #555;
+  background: $background-color_accent;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 120px;
   @include mq() {
     font-size: $font-size_s;
   }

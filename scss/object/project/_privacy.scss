@@ -6,7 +6,7 @@
   overflow-y: scroll;
   margin: 0 auto;
   // border-radius: 5px;
-  // background: #f8f7fc; // TODO:リファクタ必要（複数使いまわしている箇所があるため、変数にまとめる）
+  background: $background-color_default;
   padding: $space_l $space_xl;
 
   // &__item {

@@ -1,12 +1,14 @@
 <script>
   $(function () {
     // フロートベッダーメニュー
-    if ($(".js-float-menu-target").height() !== undefined) {
-      var targetHeight = $(".js-float-menu-target").height();
-    } else {
-      var targetHeight = 10;
-    }
+    // if ($(".js-float-menu-target").height() !== undefined) {
+    //   var targetHeight = $(".js-float-menu-target").height();
+    // } else {
+    //   var targetHeight = 10;
+    // }
     
+    var targetHeight = 10;
+
     $(window).on("scroll", function () {
       $(".js-float-menu").toggleClass(
         "float-active",
