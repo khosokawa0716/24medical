@@ -1,6 +1,6 @@
 .p-menuTrigger {
   display: none;
-  @include mq() {
+  @include sp() {
     display: inline-block;
   }
   transition: all 0.4s;

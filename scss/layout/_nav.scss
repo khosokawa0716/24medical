@@ -1,10 +1,9 @@
 // ==================================
 // nav
 // ==================================
-// 親子構造も一応変更してみた
 
 .l-nav {
-  @include mq() {
+  @include sp() {
     display: block;
     position: absolute;
     top: 0;

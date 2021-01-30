@@ -26,5 +26,8 @@
   &__title {
     font-size: $font-size_xxl;
     font-weight: bold;
+    @include tb() {
+      font-size: $font-size_xl;
+    }
   }
 }

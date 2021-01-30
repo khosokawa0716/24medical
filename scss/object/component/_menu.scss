@@ -6,6 +6,9 @@
   display: flex;
   align-items: center;
   font-size: $font-size_l;
+  @include tb() {
+    font-size: $font-size_m;
+  }
   &__item {
     margin-right: $space_xl;
   }
