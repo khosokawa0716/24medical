@@ -1,8 +1,7 @@
 // ==================================
-// hero
+// pharmacy
 // ==================================
-.p-hero {
-  background-image: url("../img/top.jpg");
+.p-pharmacy {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -14,15 +13,14 @@
   position: relative; /*中央揃えしたい要素の親要素に指定*/
 
   &__title {
-    font-size: 60px;
-    color: #fff;
-    text-shadow: 0 0 10px $background-color_accent, 0 0 50px rgba(0, 0, 0, 0.8);
+    font-size: $font-size_xxl;
+    color: $font-color_default;
 
     position: absolute; /*要素を浮かす*/
-    top: 40%; /*親要素を起点に上から50%*/
+    top: 20%; /*親要素を起点に上から50%*/
     left: 50%; /*親要素を起点に左から50%*/
-    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    // transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    // -webkit-transform: translateY(-50%) translateX(-50%);
     @include mq() {
       text-align: center;
     }
@@ -31,7 +29,7 @@
   &__paragraph {
     font-size: $font-size_l;
     position: absolute; /*要素を浮かす*/
-    top: 80%; /*親要素を起点に上から50%*/
+    top: 50%; /*親要素を起点に上から50%*/
     left: 50%; /*親要素を起点に左から50%*/
     transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
     -webkit-transform: translateY(-50%) translateX(-50%);

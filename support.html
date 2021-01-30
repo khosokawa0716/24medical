@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>24サポート | 24MEDICAL</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+    />
+    <link rel="stylesheet" href="./css/app.css" type="text/css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main id="main">
+      <section
+        class="p-pharmacy u-width"
+        style="background-image: url('img/support.jpg')"
+      >
+        <h2 class="p-pharmacy__title">24サポート</h2>
+        <p class="p-pharmacy__paragraph">
+          薬剤師の方、こんな悩みを持たれてませんか？<br /><br />
+          ・夜中に電話の対応をしなければならない<br />
+          ・日曜日や祝日、急な出勤を求められた<br />
+          ・業務が属人化していて、長期の連休が取れない<br /><br />
+          24サポートなら夜中や休日の業務を代行できます。<br />
+          過去に１００施設以上の管理経験を元に、適切な管理を提案します。<br /><br />
+          ぜひ一度<span
+            ><a href="index.html#contact" class="c-menu__link"
+              >お問い合わせ</a
+            ></span
+          >ください。
+        </p>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
