@@ -12,19 +12,30 @@
   height: 850px;
   display: block;
   position: relative; /*中央揃えしたい要素の親要素に指定*/
+  @include tb() {
+    height: 700px;
+  }
+  @include sp() {
+    height: 600px;
+  }
 
   &__title {
-    font-size: 60px;
+    font-size: 55px;
     color: #fff;
     text-shadow: 0 0 10px $background-color_accent, 0 0 50px rgba(0, 0, 0, 0.8);
 
     position: absolute; /*要素を浮かす*/
-    top: 40%; /*親要素を起点に上から50%*/
-    left: 50%; /*親要素を起点に左から50%*/
+    top: 40%; /*親要素を起点に上から*/
+    left: 50%; /*親要素を起点に左から*/
     transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
     -webkit-transform: translateY(-50%) translateX(-50%);
-    @include mq() {
+    @include tb() {
+      font-size: $font-size_3l;
+    }
+    @include sp() {
+      position: relative;
       text-align: center;
+      font-size: $font-size_xl;
     }
   }
 
@@ -35,5 +46,22 @@
     left: 50%; /*親要素を起点に左から50%*/
     transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
     -webkit-transform: translateY(-50%) translateX(-50%);
+    @include tb() {
+      position: relative;
+      top: 70%;
+      text-align: center;
+      font-size: $font-size_m;
+    }
+    @include sp() {
+      top: 50%;
+      font-size: $font-size_s;
+    }
+  }
+
+  &__br {
+    display: none;
+    @include sp() {
+      display: block;
+    }
   }
 }

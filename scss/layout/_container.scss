@@ -3,7 +3,8 @@
 // ==================================
 .l-container {
   width: $site-width;
-  @include mq() {
+
+  @include sp() {
     width: 100%;
   }
   margin-left: auto;
@@ -14,10 +15,14 @@
     text-align: center;
     font-size: $font-size_3l;
     margin-bottom: $space_3l;
-    @include mq() {
+    @include tb() {
+      font-size: $font-size_xl;
+    }
+    @include sp() {
       width: 70%;
       margin-left: auto;
       margin-right: auto;
+      font-size: $font-size_l;
     }
   }
   &__body {
