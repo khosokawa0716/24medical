@@ -2,10 +2,12 @@
 // company-overview
 // ==================================
 .p-company-overview {
-  width: 70%;
+  width: $site-width-p_pc;
   margin: 0 auto;
   padding-top: 40px;
-
+  @include sp() {
+    width: $site-width-p_sp;
+  }
   &__term {
     font-weight: bold;
     font-size: $font-size_l;

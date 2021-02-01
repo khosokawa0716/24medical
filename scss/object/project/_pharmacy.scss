@@ -8,30 +8,29 @@
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
-  height: 850px;
+  min-height: 700px;
   display: block;
-  position: relative; /*中央揃えしたい要素の親要素に指定*/
 
   &__title {
+    text-align: center;
     font-size: $font-size_xxl;
     color: $font-color_default;
-
-    position: absolute; /*要素を浮かす*/
-    top: 20%; /*親要素を起点に上から50%*/
-    left: 50%; /*親要素を起点に左から50%*/
-    // transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
-    // -webkit-transform: translateY(-50%) translateX(-50%);
-    @include mq() {
-      text-align: center;
-    }
+    padding-top: 180px;
+    padding-bottom: 60px;
   }
 
   &__paragraph {
     font-size: $font-size_l;
-    position: absolute; /*要素を浮かす*/
-    top: 50%; /*親要素を起点に上から50%*/
-    left: 50%; /*親要素を起点に左から50%*/
-    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
-    -webkit-transform: translateY(-50%) translateX(-50%);
+    width: $site-width-p_pc;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    @include sp() {
+      font-size: $font-size_m;
+      width: $site-width-p_sp;
+    }
+  }
+
+  &__bold {
+    font-weight: bold;
   }
 }

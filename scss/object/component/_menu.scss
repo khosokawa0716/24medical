@@ -15,9 +15,9 @@
   &__link {
     -webkit-font-smoothing: initial;
   }
-  @include mq() {
+  @include tb() {
     display: block;
-    font-size: $font-size_xxl;
+    font-size: $font-size_xl;
     &__item {
       margin-right: initial;
     }

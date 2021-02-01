@@ -19,7 +19,7 @@
       font-size: $font-size_xl;
     }
     @include sp() {
-      width: 70%;
+      width: $site-width-p_sp;
       margin-left: auto;
       margin-right: auto;
       font-size: $font-size_l;
@@ -29,18 +29,17 @@
     overflow: hidden;
     &-course {
       padding-top: 30px;
+      padding-left: $space_l;
+      padding-right: $space_l;
     }
     @include mq() {
       padding-left: $space_l;
       padding-right: $space_l;
     }
   }
-  //もともとは&-ornamentのcontainer-title
-  //l-title__ornament
+
   &__ornament {
-    //ornament__span
     &__span {
-      // TODO: リファクタ必要（span以外を使うことも考えてclass名で指定すること）-->クラス名に変更
       display: inline-block;
       background: #fff;
       padding: 0 10px;
@@ -57,9 +56,21 @@
     }
     &:before {
       top: 28px;
+      @include tb() {
+        top: 23px;
+      }
+      @include sp() {
+        top: 18px;
+      }
     }
     &:after {
       top: -28px;
+      @include tb() {
+        top: -23px;
+      }
+      @include sp() {
+        top: -18px;
+      }
     }
   }
 }

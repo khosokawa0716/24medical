@@ -3,7 +3,7 @@
 // ==================================
 
 .l-nav {
-  @include sp() {
+  @include tb() {
     display: block;
     position: absolute;
     top: 0;

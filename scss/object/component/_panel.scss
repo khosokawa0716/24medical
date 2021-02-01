@@ -32,7 +32,7 @@
   }
   &__head {
     text-align: center;
-    color: $color_corp;
+    // color: $color_corp;
   }
   &__active {
     border: 5px solid $color_corp;
@@ -70,6 +70,9 @@
       float: left;
       margin-bottom: $space_l;
       box-sizing: border-box;
+      @include sp() {
+        margin-bottom: $space_3l;
+      }
     }
   }
   &__staff {
@@ -82,9 +85,13 @@
   &__cource {
     width: calc(33.3% - #{$space_l});
     margin-right: $space_l;
+    @include sp() {
+      width: 70%;
+      margin: 0 auto;
+    }
     @include mq() {
       width: 100%;
-      margin: 0 auto $space_l auto;
+      margin: 0 $space_l 0 auto;
     }
   }
 }
